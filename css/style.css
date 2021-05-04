@@ -1,0 +1,98 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkCyan: hsl(179, 100%, 13%);
+    --transWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGrey: hsl(0, 0%, 95%);
+    --font-family-lexend: 'Lexend Deca', sans-serif;
+    --font-family-shoulders: 'Big Shoulders Display', sans-serif;
+}
+
+html {
+    font-size: 15px;
+}
+
+.column-container {
+   display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 75vh;
+    margin: 5rem;
+}
+ 
+.vehicle-column {
+    max-height: 400px;
+    width: 275px;
+}
+
+.vehicle-column p {
+    color: var(--transWhite);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.column-left {
+    background-color: var(--orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.column-center {
+    background-color: var(--cyan);
+}
+
+.column-right {
+    background-color: var(--darkCyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vehicle-header {
+    font-family: var(--font-family-shoulders);
+    font-size: 2rem;
+    color: var(--lightGrey);
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.header-img {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.learnBtn {
+     border:none;
+    background-color: var(--lightGrey);
+    width: 125px;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 3rem;
+}
+
+.centerBtn {
+    align-items: center;
+    margin-left: 50px;
+}
+
+.btnLeft {
+    color: var(--orange);
+}
+
+.btnCenter {
+    color: var(--cyan);
+}
+
+.btnRight {
+    color: var(--darkCyan);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
